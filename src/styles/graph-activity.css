@@ -1,0 +1,12 @@
+.activity-graph {
+  width: 100%;
+  height: 260px;
+  background-color: #fbfbfb;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 1200px) {
+  .activity-graph {
+    height: 320px;
+  }
+}
