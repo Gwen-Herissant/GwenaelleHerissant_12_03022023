@@ -1,0 +1,32 @@
+.header {
+  background-color: #020203;
+  color: #fff;
+  padding: 19px 0 15px 29px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.header ul li {
+  font-size: 24px;
+}
+
+.header ul li:not(:first-of-type) {
+  padding: 0 6% 7px;
+}
+
+/* Large screens */
+@media screen and (min-width: 1200px) {
+  .header ul li:first-of-type {
+    padding-right: 50px;
+  }
+
+  .header ul li:not(:first-of-type) {
+    padding: 0 7% 0;
+  }
+}
