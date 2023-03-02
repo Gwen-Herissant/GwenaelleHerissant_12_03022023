@@ -6,7 +6,7 @@ import SessionsGraph from "../components/SessionsGraph";
 import PerformanceGraph from "../components/PerformanceGraph";
 import ScoreGarph from "../components/ScoreGraph";
 import { useEffect, useState } from "react";
-import { getUserActivity, getUserData } from "../services/mockManager";
+import { getUserActivity, getUserData, getUserPerformance, getUserSessions } from "../services/mockManager";
 import { useParams } from "react-router-dom";
 import caloriesIcon from "../assets/images/calories-icon.svg";
 import proteinIcon from "../assets/images/protein-icon.svg";
@@ -15,16 +15,22 @@ import fatIcon from "../assets/images/fat-icon.svg";
 
 export default function Profile(){
 
-  const [userData, setUserData] = useState({userInfos: {}, keyData: {calorieCount: 0}});
+  const [userData, setUserData] = useState({userInfos: {}, todayScore: 0, keyData: {calorieCount: 0}});
   const [userActivity, setUserActivity] = useState({sessions: []});
+  const [userSessions, setUserSessions] = useState({sessions: []});
+  const [userPerformance, setUserPerformance] = useState({kind: {}, data: []});
+
   let {id} = useParams();
   useEffect( () => {
     getUserData(id)
     .then(data => setUserData(data))
     getUserActivity(id)
     .then(data => setUserActivity(data))
-  }, [setUserData, id, setUserActivity])
-
+    getUserSessions(id)
+    .then(data => setUserSessions(data))
+    getUserPerformance(id)
+    .then(data => setUserPerformance(data))
+  }, [setUserData, id, setUserActivity, setUserSessions, setUserPerformance])
 
   return(
     <div className="profile-container">
@@ -35,9 +41,9 @@ export default function Profile(){
             <ActivityGraph sessions={userActivity.sessions} />
           </div>
           <div className="profile-grid_second-row">
-            <SessionsGraph />
-            <PerformanceGraph />
-            <ScoreGarph />
+            <SessionsGraph sessions={userSessions.sessions} />
+            <PerformanceGraph data={userPerformance.data} />
+            <ScoreGarph score={userData.todayScore}/>
           </div>
         </div>
         <div className="profile-grid_second-col">
