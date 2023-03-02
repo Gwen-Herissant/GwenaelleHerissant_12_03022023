@@ -1,3 +1,8 @@
+/**
+ * 
+ * @returns fetch data
+ */
+
 const getData = () => {
   return fetch('/data/users.json', {
     headers : {
