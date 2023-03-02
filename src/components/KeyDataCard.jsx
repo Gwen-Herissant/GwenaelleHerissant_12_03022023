@@ -1,5 +1,14 @@
 import "../styles/keydata.css";
 
+/**
+ * 
+ * @param {object} keydata contains user's key informations
+ * @param {string} image prop gets src link
+ * @param {number} number prop gets data from json
+ * @param {string} description prop for what number stands for
+ * @returns card with image and keydata
+ */
+
 export default function KeyData({image, number, description}){
   return(
     <div className="keydata">

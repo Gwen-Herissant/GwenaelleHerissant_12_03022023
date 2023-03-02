@@ -1,6 +1,11 @@
 import logo from "../assets/images/sportsee-logo.svg"
 import '../styles/header.css'
 
+/**
+ * 
+ * @returns header with site nav (empty links for now)
+ */
+
 export default function Header(){
   return(
     <header className="header">

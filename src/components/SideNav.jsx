@@ -2,8 +2,12 @@ import icon_01 from "../assets/images/sidenav-icon-01.svg"
 import icon_02 from "../assets/images/sidenav-icon-02.svg"
 import icon_03 from "../assets/images/sidenav-icon-03.svg"
 import icon_04 from "../assets/images/sidenav-icon-04.svg"
-
 import "../styles/sidenav.css"
+
+/**
+ * 
+ * @returns side navigation (empty links for now)
+ */
 
 export default function SideNav(){
   return(
