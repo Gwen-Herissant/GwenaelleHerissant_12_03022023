@@ -2,7 +2,7 @@ import "../styles/graph-activity.css";
 import { BarChart, Bar, CartesianGrid, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 /**
- * 
+ * Generates the barChart for the activity data
  * @param {array} sessions contains every user sessions with some data 
  * @returns barchart displaying sessions's data : kg and kCal
  */

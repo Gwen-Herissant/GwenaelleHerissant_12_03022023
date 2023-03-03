@@ -10,6 +10,9 @@ import Root from './routes/Root';
 import reportWebVitals from './reportWebVitals';
 import Profile from './pages/Profile';
 
+/**
+ * React router
+ */
 const router = createBrowserRouter([
   {
     path: '/',

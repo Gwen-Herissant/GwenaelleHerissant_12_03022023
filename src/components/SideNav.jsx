@@ -5,7 +5,7 @@ import icon_04 from "../assets/images/sidenav-icon-04.svg"
 import "../styles/sidenav.css"
 
 /**
- * 
+ * Generate site's side navigation
  * @returns side navigation (empty links for now)
  */
 

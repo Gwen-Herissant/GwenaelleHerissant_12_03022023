@@ -1,7 +1,7 @@
 export default class Sessions{
 
   /**
-   * 
+   * Generates data formatting for sessions
    * @param {*} json 
    */
   constructor(json) {
@@ -10,7 +10,7 @@ export default class Sessions{
   }
   
   /**
-   * 
+   * Switches days from number to string corresponding to the weekday
    * @param {number} day of session
    * @returns change number to string corresponding weekday
    */

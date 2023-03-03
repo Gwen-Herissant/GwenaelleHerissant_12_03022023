@@ -1,7 +1,7 @@
 export default class Activity{
 
   /**
-   * 
+   * Generates data formatting for activities
    * @param {*} json 
    */
 

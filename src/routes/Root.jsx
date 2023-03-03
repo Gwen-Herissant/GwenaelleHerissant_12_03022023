@@ -3,6 +3,11 @@ import Header from "../components/Header";
 import SideNav from "../components/SideNav";
 //import Profile from "../pages/Profile";
 
+/**
+ * Generates rout for react router
+ * @returns site's root
+ */
+
 export default function Root(){
   return(
     <div>

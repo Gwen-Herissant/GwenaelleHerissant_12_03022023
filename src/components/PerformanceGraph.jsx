@@ -2,7 +2,7 @@ import "../styles/graph-performance.css";
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer } from 'recharts';
 
 /**
- * 
+ * Generates radarChart for performance data
  * @param {array} data contains object for kinf of performance and its value 
  * @returns radar chart
  */

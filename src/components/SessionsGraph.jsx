@@ -2,7 +2,7 @@ import "../styles/graph-sessions.css";
 import {LineChart, Line,  XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 /**
- * 
+ * Generates lineChart for sessions data
  * @param {array} sessions of objects containing day of session and length of session 
  * @returns line chart
  */

@@ -1,7 +1,7 @@
 import "../styles/banner.css"
 
 /**
- * 
+ * Generates introductory text for the profile
  * @param {string} firstname 
  * @returns banner containing user's name and a line of text
  */

@@ -13,9 +13,14 @@ import proteinIcon from "../assets/images/protein-icon.svg";
 import carbsIcon from "../assets/images/carbs-icon.svg";
 import fatIcon from "../assets/images/fat-icon.svg";
 
+/**
+ * Generates page with general layout, and calls data from "services" folder
+ * @returns layout of the page consisting of react components
+ */
+
 export default function Profile(){
 
-  const [userData, setUserData] = useState({userInfos: {}, todayScore: 0, keyData: {calorieCount: 0}});
+  const [userData, setUserData] = useState({userInfos: {}, todayScore: 0, score: 0, keyData: {calorieCount: 0}});
   const [userActivity, setUserActivity] = useState({sessions: []});
   const [userSessions, setUserSessions] = useState({sessions: []});
   const [userPerformance, setUserPerformance] = useState({kind: {}, data: []});
@@ -43,7 +48,7 @@ export default function Profile(){
           <div className="profile-grid_second-row">
             <SessionsGraph sessions={userSessions.sessions} />
             <PerformanceGraph data={userPerformance.data} />
-            <ScoreGarph score={userData.todayScore}/>
+            <ScoreGarph score={userData.todayScore || userData.score}/>
           </div>
         </div>
         <div className="profile-grid_second-col">

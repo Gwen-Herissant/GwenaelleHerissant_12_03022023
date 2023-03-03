@@ -1,7 +1,7 @@
 import "../styles/keydata.css";
 
 /**
- * 
+ * Generates card's content for keydatas
  * @param {object} keydata contains user's key informations
  * @param {string} image prop gets src link
  * @param {number} number prop gets data from json

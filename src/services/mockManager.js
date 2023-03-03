@@ -3,7 +3,7 @@ import Performance from "../models/Performance";
 import Sessions from "../models/Sessions";
 
 /**
- * 
+ * Fetches data from json
  * @returns data or error
  */
 async function getData() {
@@ -17,7 +17,7 @@ async function getData() {
 }
 
 /**
- * 
+ * Gets data for user's main informations
  * @param {int} id of user
  * @returns user's data
  */
@@ -26,7 +26,7 @@ export async function getUserData(id) {
 }
 
 /**
- * 
+ * Gets formated data for user's activity
  * @param {int} id 
  * @returns object formating user's data
  */
@@ -36,7 +36,7 @@ export async function getUserActivity(id) {
 }
 
 /**
- * 
+ * Gets formated data for user's sessions
  * @param {int} id 
  * @returns object formating user's data
  */
@@ -46,7 +46,7 @@ export async function getUserSessions(id) {
 }
 
 /**
- * 
+ * Gets formated data for user's performance
  * @param {int} id 
  * @returns object formating user's data
  */
