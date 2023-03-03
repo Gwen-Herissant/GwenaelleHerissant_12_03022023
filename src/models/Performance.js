@@ -1,11 +1,11 @@
 export default class Performance {
   /**
-   * 
+   * Generates data formatting for performances
    * @param {*} json 
    */
   constructor(json) {
     this.kind = Object.entries(json.kind).map(([key, value]) => ({
-      id: this.getId(parseInt(key)),
+      id: parseInt(key),
       name: value
     }));
     console.log(this.kind);
@@ -14,35 +14,12 @@ export default class Performance {
       value: entry.value,
       kind: this.getKind(entry.kind)
     }));
+    this.data = this.data.reverse();
     console.log(this.data);
   }
 
   /**
-   * 
-   * @param {number} id is the key for each child of "kind" object
-   * @returns new id
-   */
-  getId(id) {
-    switch (id) {
-      case 1:
-        return 6;
-      case 2:
-        return 5;
-      case 3:
-        return 4;
-      case 4:
-        return 3;
-      case 5:
-        return 2;
-      case 6:
-        return 1;
-      default:
-        return "";
-    }
-  }
-  
-  /**
-   * 
+   * Switches kinds of performances to french
    * @param {string} kind of performance
    * @returns change number to string
    */
