@@ -1,8 +1,44 @@
 .sessions-graph {
+  position: relative;
   width: 190px;
   height: 190px;
   background-color: #ff0000;
   border-radius: 5px;
+}
+
+.sessions-graph_title {
+  position: absolute;
+  font-size: 12px;
+  color: #fff;
+  width: 80%;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  padding: 8px;
+}
+
+.session_custom-tooltip {
+  background-color: #fff;
+  border: none;
+  border-radius: 0;
+}
+
+.session_custom-tooltip:hover,
+.session_custom-tooltip:active,
+.session_custom-tooltip:focus,
+.session_custom-tooltip:focus-visible {
+  outline: none;
+  border: none;
+  broder-radius: 0px;
+}
+
+.session_custom-tooltip p {
+  color: #000;
+  font-size: 8px;
+  font-weight: 500;
+  text-align: center;
+  padding: 8px;
+  margin: 0px;
 }
 
 @media screen and (min-width: 1200px) {
