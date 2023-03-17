@@ -8,14 +8,14 @@ export default class Performance {
       id: parseInt(key),
       name: value
     }));
-    console.log(this.kind);
+    // console.log(this.kind);
 
     this.data = json.data.map(entry => ({
       value: entry.value,
       kind: this.getKind(entry.kind)
     }));
     this.data = this.data.reverse();
-    console.log(this.data);
+    // console.log(this.data);
   }
 
   /**
@@ -26,17 +26,17 @@ export default class Performance {
   getKind(kind) {
     switch (kind) {
       case 1:
-        return "Intensité";
-      case 2:
-        return "Vitesse";
-      case 3:
-        return "Force";
-      case 4:
-        return "Endurance";
-      case 5:
-        return "Energie";
-      case 6:
         return "Cardio";
+      case 2:
+        return "Energie";
+      case 3:
+        return "Endurance";
+      case 4:
+        return "Force";
+      case 5:
+        return "Vitesse";
+      case 6:
+        return "Intensité";
       default:
         return "";
     }
