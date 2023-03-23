@@ -1,4 +1,5 @@
 import "../styles/keydata.css";
+import PropTypes from 'prop-types';
 
 /**
  * Generates card's content for keydatas
@@ -19,4 +20,11 @@ export default function KeyData({image, number, description}){
       </div>
     </div>
   );
+}
+
+//PropTypes
+KeyData.propTypes = {
+  image: PropTypes.string,
+  number: PropTypes.number,
+  description: PropTypes.string
 }

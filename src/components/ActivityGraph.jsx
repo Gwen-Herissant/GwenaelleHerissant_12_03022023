@@ -1,5 +1,6 @@
 import "../styles/graph-activity.css";
 import { BarChart, Bar, CartesianGrid, XAxis, YAxis, Label, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import PropTypes from 'prop-types';
 
 
 /**
@@ -60,3 +61,15 @@ export default function ActivityGraph({sessions}){
     </div>
   );
 }
+
+
+//Prop types à ajouter
+ActivityGraph.propTypes = {
+  sessions: PropTypes.arrayOf(
+    PropTypes.shape({
+      day: PropTypes.string,
+      kilogram: PropTypes.number,
+      calories: PropTypes.number
+    })
+  )
+};

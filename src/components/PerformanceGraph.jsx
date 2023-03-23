@@ -1,5 +1,7 @@
 import "../styles/graph-performance.css";
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, ResponsiveContainer } from 'recharts';
+import PropTypes from 'prop-types';
+
 
 /**
  * Generates radarChart for performance data
@@ -20,3 +22,14 @@ export default function PerformanceGraph({data}){
     </div>
   );
 }
+
+
+//Prop types à ajouter
+PerformanceGraph.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      value: PropTypes.number,
+      kind: PropTypes.number
+    })
+  )
+};

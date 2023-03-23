@@ -1,5 +1,6 @@
 import "../styles/graph-sessions.css";
 import {LineChart, Line,  XAxis, Tooltip, ResponsiveContainer } from 'recharts';
+import PropTypes from 'prop-types';
 
 /**
  * Generated custom tooltip for the lineChart
@@ -44,3 +45,11 @@ export default function SessionsGraph({sessions}){
 }
 
 //Prop types à ajouter
+SessionsGraph.propTypes = {
+  sessions: PropTypes.arrayOf(
+    PropTypes.shape({
+      day: PropTypes.number,
+      sessionLength: PropTypes.number
+    })
+  )
+};

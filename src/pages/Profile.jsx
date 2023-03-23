@@ -21,8 +21,8 @@ import fatIcon from "../assets/images/fat-icon.svg";
 export default function Profile(){
 
   const [userData, setUserData] = useState({userInfos: {}, todayScore: 0, score: 0, keyData: {calorieCount: 0}});
-  const [userActivity, setUserActivity] = useState({sessions: []});
-  const [userSessions, setUserSessions] = useState({sessions: []});
+  const [userActivity, setUserActivity] = useState({sessions: [], kilogram: 0, calories: 0});
+  const [userSessions, setUserSessions] = useState({sessions: [], sessionLength: 0});
   const [userPerformance, setUserPerformance] = useState({kind: {}, data: []});
 
   let {id} = useParams();

@@ -1,4 +1,5 @@
 import "../styles/banner.css"
+import PropTypes from 'prop-types';
 
 /**
  * Generates introductory text for the profile
@@ -13,4 +14,10 @@ export default function Banner({firstName}){
       <p>Félicitation ! Vous avez explosé vos objectifs hier 👏</p>
     </div>
   );
+}
+
+
+//PropTypes
+Banner.propTypes = {
+  firstName: PropTypes.string
 }

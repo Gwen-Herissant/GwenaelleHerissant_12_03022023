@@ -1,5 +1,6 @@
 import "../styles/graph-score.css";
 import { Legend, ResponsiveContainer, PieChart, Pie } from 'recharts';
+import PropTypes from 'prop-types';
 
 
 /**
@@ -27,7 +28,7 @@ export default function ScoreGarph({score}){
     <div className="score-graph">
       <p className="score-graph_title" >Score</p>
       <ResponsiveContainer width="100%" height="100%">
-        <PieChart width={400} height={400}>
+        <PieChart>
           <Pie
             data={fill}
             dataKey="score"
@@ -74,3 +75,9 @@ const CustomLegend = (props) => {
     </ul>
   );
 };
+
+
+//PropTypes
+ScoreGarph.propTypes = {
+  score: PropTypes.number
+}
