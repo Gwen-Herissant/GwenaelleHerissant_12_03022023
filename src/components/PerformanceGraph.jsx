@@ -16,7 +16,7 @@ export default function PerformanceGraph({data}){
         <RadarChart cx="50%" cy="50%" outerRadius="60%" data={data}>
           <PolarGrid gridType="polygon" radialLines={false} />
           <PolarAngleAxis dataKey="kind" fontSize={12} fontWeight={500} tick={{ fill: "#fff"}} />
-          <Radar name="Mike" dataKey="value" fill="#FF0101B2" fillOpacity={0.6} />
+          <Radar name="Mike" dataKey="value" fill="#FF0101B2" fillOpacity={0.6} isAnimationActive={false} />
         </RadarChart>
       </ResponsiveContainer>
     </div>

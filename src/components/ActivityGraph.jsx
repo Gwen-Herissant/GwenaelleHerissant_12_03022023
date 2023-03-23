@@ -54,8 +54,8 @@ export default function ActivityGraph({sessions}){
             />
             
             <Legend verticalAlign="top" align="right" height={60} iconType="circle" iconSize={8} />
-            <Bar dataKey="kilogram" name="Poid (kg)" fill="#282D30" barSize={7} radius={[3.5, 3.5, 0, 0]} /> 
-            <Bar dataKey="calories" name="Calories brûlées (Kcal)" fill="#E60000" barSize={7} radius={[3.5, 3.5, 0, 0]} />
+            <Bar dataKey="kilogram" name="Poid (kg)" fill="#282D30" barSize={7} radius={[3.5, 3.5, 0, 0]} isAnimationActive={false} /> 
+            <Bar dataKey="calories" name="Calories brûlées (Kcal)" fill="#E60000" barSize={7} radius={[3.5, 3.5, 0, 0]} isAnimationActive={false} />
           </BarChart>
         </ResponsiveContainer>
     </div>

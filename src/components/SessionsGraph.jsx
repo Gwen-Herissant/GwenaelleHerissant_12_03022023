@@ -32,7 +32,7 @@ export default function SessionsGraph({sessions}){
       <p className="sessions-graph_title" >Durée moyenne des sessions</p>
       <ResponsiveContainer width="100%" height="100%">
         <LineChart width={300} height={100} data={sessions}> 
-          <Line type="monotone" dataKey="sessionLength" stroke="#fff" strokeWidth={2} dot={false} />
+          <Line type="monotone" dataKey="sessionLength" stroke="#fff" strokeWidth={2} dot={false} isAnimationActive={false} />
           <XAxis dataKey="day" axisLine={false} tickLine={false} fontSize={12} fontWeight={500} stroke="#fff" opacity={0.5} />
           <Tooltip 
             content={<CustomTooltip />}

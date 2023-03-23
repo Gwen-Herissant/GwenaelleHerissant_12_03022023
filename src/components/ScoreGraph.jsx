@@ -1,5 +1,5 @@
 import "../styles/graph-score.css";
-import { Legend, ResponsiveContainer, PieChart, Pie, RadialBar, RadialBarChart } from 'recharts';
+import { Legend, ResponsiveContainer, RadialBar, RadialBarChart } from 'recharts';
 import PropTypes from 'prop-types';
 
 
@@ -50,6 +50,7 @@ export default function ScoreGarph({score}){
               background
               clockWise
               dataKey="score"
+              isAnimationActive={false}
             />
             <Legend iconSize={0} layout="vertical" align="center" verticalAlign="middle" content={<CustomLegend />} />
           </RadialBarChart>
