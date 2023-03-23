@@ -6,6 +6,19 @@
   border-radius: 5px;
 }
 
+.score-graph_wrapper {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.recharts-sector.recharts-radial-bar-background-sector {
+  fill: #fbfbfb;
+}
+
 .score-graph_title {
   position: absolute;
   font-size: 12px;

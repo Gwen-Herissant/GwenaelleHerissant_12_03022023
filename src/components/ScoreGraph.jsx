@@ -1,12 +1,13 @@
 import "../styles/graph-score.css";
-import { Legend, ResponsiveContainer, PieChart, Pie } from 'recharts';
+import { Legend, ResponsiveContainer, PieChart, Pie, RadialBar, RadialBarChart } from 'recharts';
 import PropTypes from 'prop-types';
 
 
 /**
  * Generates radialBar chart for day's score
+ * @param name number + string
+ * @param score number
  * @param {array} data 
- * @param {object} style for label
  * @returns pie chart
  */
 
@@ -14,42 +15,46 @@ export default function ScoreGarph({score}){
 
   const name = Math.floor(score * 100) + "%";
 
-  const blankSpace = 1 - score;
-
   const data = [
-    { name: name, score: score, fill: "#FF0000" },
-    { name: "", score: blankSpace, fill: "rgba(0, 0, 0, 0)" }
-  ];
-  const fill = [
-    { name: "", score: 1, fill: "#FFF" }
+    {
+      name: "",
+      score: 1,
+      //fill: "#8884d8"
+      opacity: 0
+    },
+    {
+      name: name,
+      score: score,
+      fill: "#FF0000",
+    }
   ];
 
   return(
     <div className="score-graph">
       <p className="score-graph_title" >Score</p>
-      <ResponsiveContainer width="100%" height="100%">
-        <PieChart>
-          <Pie
-            data={fill}
-            dataKey="score"
-            cx={90}
-            cy={90}
-            outerRadius={60}
-          />
-          <Pie
+      <div className="score-graph_wrapper" style={{ backgroundColor: "#FFFFFF", borderRadius: "50%" }}>
+        <ResponsiveContainer width="100%" height="100%">
+          <RadialBarChart
+            // width={400}
+            // height={200}
+            cx="50%"
+            cy="50%"
+            innerRadius={23}
+            outerRadius={100}
+            barSize={8}
             data={data}
-            dataKey="score"
-            cx={90}
-            cy={90}
-            innerRadius={60}
-            outerRadius={68}
-            paddingAngle={0}
-            cornerRadius={10}
-          />
-          <Legend iconSize={0} layout="vertical" align="center" verticalAlign="middle" content={<CustomLegend />} />
-        </PieChart>
-      </ResponsiveContainer>
-      
+          >
+            <RadialBar
+              minAngle={15}
+              cornerRadius="50%"
+              background
+              clockWise
+              dataKey="score"
+            />
+            <Legend iconSize={0} layout="vertical" align="center" verticalAlign="middle" content={<CustomLegend />} />
+          </RadialBarChart>
+        </ResponsiveContainer>
+      </div>
     </div>
   );
 }
