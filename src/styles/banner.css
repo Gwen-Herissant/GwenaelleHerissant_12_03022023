@@ -1,10 +1,10 @@
 .banner {
-  margin-bottom: 47px;
+  margin-bottom: 40px;
 }
 
 .banner h1 {
   font-size: 48px;
-  margin-bottom: 41px;
+  margin-bottom: 30px;
 }
 
 .banner h1 span {
@@ -16,8 +16,8 @@
   font-weight: 400;
 }
 
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
   .banner {
-    margin-bottom: 77px;
+    //margin-bottom: 50px;
   }
-}
+} */

@@ -24,12 +24,16 @@
 @media screen and (min-width: 1200px) {
   .profile-container {
     margin-left: 117px;
-    padding: 68px 90px 90px 109px;
+    padding: 45px 90px 0px 109px;
   }
 
   .profile-grid,
   .profile-grid_first-col,
   .profile-grid_second-row {
-    gap: 30px;
+    gap: 25px;
+  }
+
+  .profile-grid_second-row {
+    justify-items: center;
   }
 }
