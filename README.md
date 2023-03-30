@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# Project 9 - Front-end Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repo contains all the source code to run the profile page for the sports analytics dashboard SportSee.
 
-## Available Scripts
+## 1. General information
 
-In the project directory, you can run:
+In this documentation, we will see several methods to launch the project easily.
+For the frontend to work you will need to launch the Project 9 - Front-end Dashboard repository first, which runs the micro API.
+
+## 2. Project
+
+### 2.1 Prerequisites
+
+- [NodeJS (**version 12.18**)](https://nodejs.org/en/)
+- [Yarn](https://yarnpkg.com/)
+- Project 9 - Front-end Dashboard repository (https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard)
+
+If you are working with several versions of NodeJS, we recommend you install [nvm](https://github.com/nvm-sh/nvm). This tool will allow you to easily manage your NodeJS versions.
+
+### 2.2 Launching the project
+
+To run the micro API :
+
+- Fork the "Project 9" repository
+- Clone it on your computer.
+- Run `yarn` or `npm install` to install the dependencies.
+- Run `yarn dev` or `npm start` to run the micro API.
+
+To run the frontend :
+
+- Fork the present repository
+- Clone it on your computer.
+- Run `yarn` or `npm install` to install the dependencies.
+- Run `yarn dev` or `npm start` to run the front.
 
 ### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+After runnin `npm start` you may get a message in the terminal warning you that the port 3000 is already in use, and asking if you want to use another port. In this case, type `Enter` to answer yes.
+
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+## 3. Seeing the profile page
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Since the profile page is not the index pages of the project, you will get an error upon opening port 3000 on your browser.
 
-### `npm run build`
+To see the profile dashboard, you will need to add `user/${userId}` in the url.
+In our case, only two users have been mocked in the API, their Ids are 12 and 18.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+So make sure the url in your browser is as follow :
+`http://localhost:3000/user/12` or `http://localhost:3000/user/18` (your localhost may not be `3000`, change it accordingly)
