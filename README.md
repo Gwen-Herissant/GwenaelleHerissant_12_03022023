@@ -38,7 +38,7 @@ To run the frontend :
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-After runnin `npm start` you may get a message in the terminal warning you that the port 3000 is already in use, and asking if you want to use another port. In this case, type `Enter` to answer yes.
+After running `npm start` you may get a message in the terminal warning you that the port 3000 is already in use, and asking if you want to use another port. In this case, type `Enter` to answer yes.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
