@@ -48,7 +48,7 @@ export default function SessionsGraph({sessions}){
 SessionsGraph.propTypes = {
   sessions: PropTypes.arrayOf(
     PropTypes.shape({
-      day: PropTypes.number,
+      day: PropTypes.string,
       sessionLength: PropTypes.number
     })
   )

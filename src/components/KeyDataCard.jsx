@@ -25,6 +25,6 @@ export default function KeyData({image, number, description}){
 //PropTypes
 KeyData.propTypes = {
   image: PropTypes.string,
-  number: PropTypes.number,
+  number: PropTypes.string,
   description: PropTypes.string
 }
