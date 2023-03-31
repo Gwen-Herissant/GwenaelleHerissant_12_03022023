@@ -21,7 +21,7 @@
 }
 
 /* Large screens */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (min-height: 780px) {
   .header ul li:first-of-type {
     padding-right: 50px;
   }

@@ -35,7 +35,7 @@ span.recharts-legend-item-text {
   margin: 0px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (min-height: 780px) {
   .activity-graph {
     height: 320px;
   }

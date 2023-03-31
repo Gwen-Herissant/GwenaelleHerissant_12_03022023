@@ -9,7 +9,7 @@
   transform: translateY(4px);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (min-height: 780px) {
   .performance-graph {
     width: 258px;
     height: 260px;
