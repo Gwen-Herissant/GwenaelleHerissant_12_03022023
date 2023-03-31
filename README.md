@@ -45,6 +45,8 @@ You may also see any lint errors in the console.
 
 ## 3. Seeing the profile page
 
+### 3.1 Opening the page
+
 Since the profile page is not the index pages of the project, you will get an error upon opening port 3000 on your browser.
 
 To see the profile dashboard, you will need to add `user/${userId}` in the url.
@@ -52,3 +54,9 @@ In our case, only two users have been mocked in the API, their Ids are 12 and 18
 
 So make sure the url in your browser is as follow :
 `http://localhost:3000/user/12` or `http://localhost:3000/user/18` (your localhost may not be `3000`, change it accordingly)
+
+### 3.2 Responsive
+
+As requested, the page is responsive for 1024x780 screens and larger.
+
+Part of the responsive layout is managed with Javascript, meaning you will have to reload your page after resizing your screen, to actually see the resized version of the page.
