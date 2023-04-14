@@ -1,0 +1,30 @@
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10rem auto;
+}
+
+.error-page h1,
+.error-page p,
+.error-page a {
+  color: #3b3b3b;
+}
+
+.error-page h1 {
+  font-size: 48px;
+  margin-bottom: 3rem;
+}
+
+.error-page p {
+  margin-bottom: 1.5rem;
+}
+
+.error-page a {
+  text-decoration: underline;
+}
+
+.error-page a:hover {
+  filter: brightness(0.3);
+  transition: filter 0.2s ease-in-out;
+}

@@ -9,6 +9,7 @@ import {
 import Root from './routes/Root';
 import reportWebVitals from './reportWebVitals';
 import Profile from './pages/Profile';
+import ErrorPage from './pages/ErrorPage';
 
 /**
  * React router
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <Root />,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,

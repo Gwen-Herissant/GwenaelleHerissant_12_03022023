@@ -1,3 +1,4 @@
+import { redirect } from "react-router-dom";
 import Activity from "../models/Activity";
 import Performance from "../models/Performance";
 import Sessions from "../models/Sessions";
@@ -14,7 +15,8 @@ async function getData(type, id) {
     let data = await results.json();
     return data.data;
   } else {
-    return Promise.reject("Fichier non trouvé");
+    console.log(Promise.reject("Fichier non trouvé"));
+    return redirect("/error-page")
   }
 }
 
