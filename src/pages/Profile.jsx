@@ -6,7 +6,7 @@ import SessionsGraph from "../components/SessionsGraph";
 import PerformanceGraph from "../components/PerformanceGraph";
 import ScoreGarph from "../components/ScoreGraph";
 import { useEffect, useState } from "react";
-import { getUserActivity, getUserData, getUserPerformance, getUserSessions } from "../services/mockManager";
+import { getUserActivity, getUserData, getUserPerformance, getUserSessions } from "../services/apiManager";
 import { useParams } from "react-router-dom";
 import caloriesIcon from "../assets/images/calories-icon.svg";
 import proteinIcon from "../assets/images/protein-icon.svg";
