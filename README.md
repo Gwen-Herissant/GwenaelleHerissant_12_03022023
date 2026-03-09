@@ -1,62 +1,89 @@
-# Project 9 - Front-end Dashboard
+# SportSee — Sports Analytics Dashboard (Frontend)
 
-This repo contains all the source code to run the profile page for the sports analytics dashboard SportSee.
+A sports analytics dashboard featuring advanced data visualizations built with React, as part of a front-end development training program.
 
-## 1. General information
+> This is the **frontend** repository. It must be run alongside the [backend repository](https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard).
 
-In this documentation, we will see several methods to launch the project easily.
-For the frontend to work you will need to launch the Project 9 - Front-end Dashboard repository first, which runs the micro API.
+## Project Overview
 
-## 2. Project
+This project was completed as part of a structured front-end development curriculum. The goal was to build a user profile dashboard for a sports coaching app, integrating data fetched from a REST API and displaying it through interactive charts and diagrams.
 
-### 2.1 Prerequisites
+A key requirement of the project was **code documentation** — writing JSDoc comments, defining PropTypes, and maintaining a clear README to ensure the codebase is understandable and team-ready.
 
-- [NodeJS (**version 12.18**)](https://nodejs.org/en/)
-- [Yarn](https://yarnpkg.com/)
-- Project 9 - Front-end Dashboard repository (https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard)
+## Objectives
 
-If you are working with several versions of NodeJS, we recommend you install [nvm](https://github.com/nvm-sh/nvm). This tool will allow you to easily manage your NodeJS versions.
+- Build a data-driven dashboard with React
+- Integrate advanced charts and diagrams using a JavaScript charting library
+- Fetch and handle data from a REST API with Axios/Fetch
+- Document the codebase with JSDoc and PropTypes
 
-### 2.2 Launching the project
+## Tech Stack
 
-To run the micro API :
+![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
+![Recharts](https://img.shields.io/badge/Recharts-22B5BF?style=flat&logo=react&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 
-- Fork the "Project 9" repository
-- Clone it on your computer.
-- Run `yarn` or `npm install` to install the dependencies.
-- Run `yarn dev` or `npm start` to run the micro API.
+## Key Features
 
-To run the frontend :
+- **User profile page** — personalized dashboard displaying activity, sessions, performance and daily score
+- **Data visualizations** — bar chart, line chart, radar chart and radial chart built with Recharts
+- **API integration** — data fetched from a local REST API
+- **Responsive layout** — optimized for screens 1024x780 and larger
+- **Code documentation** — JSDoc, PropTypes
 
-- Fork the present repository
-- Clone it on your computer.
-- Run `yarn` or `npm install` to install the dependencies.
-- Run `yarn dev` or `npm start` to run the front.
+## What I Learned
 
-### `npm start`
+- Building a complex, data-driven UI with React
+- Creating custom charts with Recharts
+- Managing HTTP requests and handling API responses
+- Documenting a React codebase with JSDoc and PropTypes
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Context
 
-After running `npm start` you may get a message in the terminal warning you that the port 3000 is already in use, and asking if you want to use another port. In this case, type `Enter` to answer yes.
+This project is part of the **OpenClassrooms Front-End Developer** curriculum. It builds on React fundamentals by introducing API integration, data visualization, and professional code documentation practices.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-## 3. Seeing the profile page
+## Getting Started
 
-### 3.1 Opening the page
+### Prerequisites
 
-Since the profile page is not the index pages of the project, you will get an error upon opening port 3000 on your browser.
+- NodeJS (version 12.18)
+- Yarn or npm
+- The [backend repository](https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard) must be running first
 
-To see the profile dashboard, you will need to add `user/${userId}` in the url.
-In our case, only two users have been mocked in the API, their Ids are 12 and 18.
+> If you manage multiple Node versions, [nvm](https://github.com/nvm-sh/nvm) is recommended.
 
-So make sure the url in your browser is as follow :
-`http://localhost:3000/user/12` or `http://localhost:3000/user/18` (your localhost may not be `3000`, change it accordingly)
+### Installation
 
-### 3.2 Responsive
+Clone the repository and install dependencies:
 
-As requested, the page is responsive for 1024x780 screens and larger.
+```bash
+git clone https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard.git
+cd P9-front-end-dashboard
+npm install
+```
 
-Part of the responsive layout is managed with Javascript, meaning you will have to reload your page after resizing your screen, to actually see the resized version of the page.
+Start the app:
+
+```bash
+npm start
+```
+
+The app is available at: `http://localhost:3000`
+
+> If port 3000 is already in use, press `Enter` when prompted to use another port.
+
+## Viewing the Dashboard
+
+The index page will return an error — navigate directly to a user profile:
+
+- `http://localhost:3000/user/12`
+- `http://localhost:3000/user/18`
+
+> Only users with IDs **12** and **18** are available in the mocked API.
+
+## Responsive
+
+The page is responsive for screens **1024x780 and larger**. Part of the responsive layout is handled via JavaScript — reload the page after resizing your browser to see the updated layout.
